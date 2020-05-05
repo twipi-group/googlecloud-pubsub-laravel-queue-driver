@@ -1,0 +1,49 @@
+{
+    "name": "twipi-group/googlecloud-pubsub-laravel-queue-driver",
+    "description": "Google Cloud PubSub driver for Laravel/Lumen Queue.",
+    "keywords": [
+        "queue",
+        "gcp",
+        "google",
+        "pubsub",
+        "laravel",
+        "lumen",
+        "twipi-group"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexis Gomez",
+            "email": "alexis.gomez.182@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "ext-json": "*",
+        "ramsey/uuid": "^3.8",
+        "illuminate/queue": "5.7.*|5.8.*",
+        "google/cloud-pubsub": "^1.21",
+        "twipi-group/googlecloud-pubsub-php-adapter": "1.0.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TwipiGroup\\GoogleCloudPubSubLaravelQueueDriver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TwipiGroup\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
