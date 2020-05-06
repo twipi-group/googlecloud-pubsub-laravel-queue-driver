@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+  pull_request:
+    branches: 
+      - master
+      - develop
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout project
+      uses: actions/checkout@v2
+    - name: run composer install
+      uses: php-actions/composer@v1
+    - name: run phpunit tests
+      run: /usr/bin/php -f vendor/bin/phpunit Tests
