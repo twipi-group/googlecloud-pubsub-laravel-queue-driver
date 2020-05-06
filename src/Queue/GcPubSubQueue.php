@@ -128,8 +128,7 @@ class GcPubSubQueue extends Queue implements QueueContract
      */
     public function size($queue = null)
     {
-        $size = count(iterator_to_array($this->gcpubsub->getSubscription($this->getSubscriber($queue))->pull()));
-
+        $size = count(iterator_to_array($this->gcpubsub->getSubscription($this->getSubscriber($queue), $this->getQueue($queue))->pull()));
         return $size;
     }
 
