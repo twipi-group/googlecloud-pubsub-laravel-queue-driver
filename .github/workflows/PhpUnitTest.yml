@@ -20,4 +20,4 @@ jobs:
     - name: run composer install
       uses: php-actions/composer@v1
     - name: run phpunit tests
-      run: /usr/bin/php -f vendor/bin/phpunit Tests
+      run: /usr/bin/php -f vendor/bin/phpunit tests
