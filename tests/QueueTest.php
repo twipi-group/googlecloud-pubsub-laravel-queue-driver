@@ -35,7 +35,7 @@ class QueueTest extends TestCase
      */
     private $expectedPublishResult = [];
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->expectedPublishResult = [
             'messageIds' => [
