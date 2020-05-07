@@ -24,7 +24,7 @@
         "illuminate/queue": "5.7.*|5.8.*|^6.0|^7.0",
         "illuminate/support": "5.7.*|5.8.*|^6.0|^7.0",
         "google/cloud-pubsub": "^1.21",
-        "twipi-group/googlecloud-pubsub-php-adapter": "^1.*"
+        "twipi-group/googlecloud-pubsub-php-adapter": "^1.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
