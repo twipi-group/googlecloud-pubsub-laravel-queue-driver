@@ -46,6 +46,9 @@ You may run the worker using the queue:work Artisan command. ([Laravel documenta
 ```
 php artisan queue:work gcpubsub [--queue=myqueue]
 ```
+
+When `APP_DEBUG=true` in your `.env` file, you can check google cloud subscribers from the queue worker output.
+
 ## Tests
 ```
 vendor/bin/phpunit tests
