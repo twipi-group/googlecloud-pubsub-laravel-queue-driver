@@ -29,6 +29,10 @@ class GcPubSubConnector implements ConnectorInterface
         $pubsub = new GcPubSub($client);
         $pubsub->setMaxMessages(1);
 
+        if (env('APP_DEBUG', false) === true) {
+            $pubsub->setDebug(true);
+        }
+
         return new GcPubSubQueue(
             $pubsub,
             $config
